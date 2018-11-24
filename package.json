@@ -1,0 +1,14 @@
+{
+  "name": "@earthtone/prisoner-ipsum",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node lib/getQuotes"
+  },
+  "author": "earthtone <earthlyillusion@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.10.0"
+  }
+}
