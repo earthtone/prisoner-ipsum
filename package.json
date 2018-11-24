@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "prisoner-ipsum": "./bin/cli.js" 
+  },
   "scripts": {
     "scrape": "node lib/getQuotes"
   },
