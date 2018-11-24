@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "prisoner-ipsum": "./bin/cli.js" 
+    "prisoner-ipsum": "./bin/cli.js"
   },
   "scripts": {
     "scrape": "node lib/getQuotes"
   },
   "author": "earthtone <earthlyillusion@gmail.com>",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "puppeteer": "^1.10.0"
   }
 }
