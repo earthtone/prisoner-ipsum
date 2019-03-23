@@ -1,13 +1,25 @@
 #!/usr/bin/env node
 
 const argv = require('minimist')(process.argv.slice(2))
-const getAllParagraphs = require('../lib/get-all-paragraphs')
-const makeHtml = require('../lib/make-html')
+const { prop } = require('ramda')
 
-var out = getAllParagraphs(...argv._)
+const getAllParagraphs = require('../')
+const makeHtml = require('../html')
+const getRandomTitle = require('../title')
+const getJson = require('../json')
 
-if (argv.html) {
-  out = makeHtml(out)
+const type = prop('o', argv) || prop('output', argv)
+var out
+
+if (type && type === 'title') {
+  out = getRandomTitle()
+} else if (type && type === 'html') {
+  console.log(...argv._)
+  out = makeHtml(...argv._)
+} else if (type && type === 'json') {
+  out = getJson(...argv._)
+} else {
+  out = getAllParagraphs(...argv._)
 }
 
 console.log(out)

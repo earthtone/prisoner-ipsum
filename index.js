@@ -1,1 +1,1 @@
-module.exports = require('./lib/getAllParagraphs')
+module.exports = require('./lib/get-all-paragraphs')

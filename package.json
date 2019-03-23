@@ -7,14 +7,20 @@
     "prisoner-ipsum": "./bin/cli.js"
   },
   "scripts": {
+    "test": "tape-watch ./**/*.spec.js -o '| colortape'",
     "scrape": "node lib/getQuotes"
   },
   "author": "earthtone <earthlyillusion@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "puppeteer": "^1.10.0"
+    "assert-html": "^1.1.5",
+    "puppeteer": "^1.10.0",
+    "tape": "^4.10.1",
+    "tape-watch": "^2.3.0"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "colortape": "^0.1.2",
+    "minimist": "^1.2.0",
+    "ramda": "^0.26.1"
   }
 }
