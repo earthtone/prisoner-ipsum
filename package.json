@@ -8,14 +8,14 @@
   },
   "scripts": {
     "test": "tape-watch ./**/*.spec.js -o '| colortape'",
-    "scrape": "node lib/getQuotes"
+    "scrape": "node lib/get-quotes"
   },
   "author": "earthtone <earthlyillusion@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "assert-html": "^1.1.5",
-    "puppeteer": "^1.10.0",
-    "tape": "^4.10.1",
+    "puppeteer": "^1.17.0",
+    "tape": "^4.10.2",
     "tape-watch": "^2.3.0"
   },
   "dependencies": {
