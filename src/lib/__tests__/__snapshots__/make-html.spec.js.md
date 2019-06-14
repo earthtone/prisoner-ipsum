@@ -1,4 +1,4 @@
-# Snapshot report for `lib/__tests__/make-html.spec.js`
+# Snapshot report for `src/lib/__tests__/make-html.spec.js`
 
 The actual snapshot is saved in `make-html.spec.js.snap`.
 

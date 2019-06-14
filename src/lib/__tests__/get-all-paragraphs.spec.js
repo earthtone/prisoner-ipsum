@@ -1,6 +1,6 @@
-const test = require('ava')
-const { add, lte, length, compose, split, head } = require('ramda')
-const getAllParagraphs = require('../get-all-paragraphs')
+import test from 'ava'
+import { add, lte, length, compose, split, head } from 'ramda'
+import getAllParagraphs from '../get-all-paragraphs'
 
 test('It returns the given number of paragraphs', assert => {
   const limit = Math.floor(Math.random() * 10)

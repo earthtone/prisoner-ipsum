@@ -15,10 +15,12 @@ npm install @earthtone/prisoner-ipsum
 As module
 
 ```js
-const ipsumText = require('@earthtone/prisoner-ipsum')
-const ipsumHtml = require('@earthtone/prisoner-ipsum/html')
-const ipsumTitle = require('@earthtone/prisoner-ipsum/title')
-const ipsumJson = require('@earthtone/prisoner-ipsum/api')
+import { 
+  ipsum as ipsumText, 
+  html as ipsumHtml, 
+  json as ipsumJson, 
+  title as ipsumTitle
+} from '@earthtone/prisoner-ipsum'
 
 const div = document.createElement('div')
 div.text = ipsumText(2, 250)

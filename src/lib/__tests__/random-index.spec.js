@@ -1,6 +1,6 @@
-const test = require('ava')
-const { includes, length, gte } = require('ramda')
-const randomIndex = require('../random-index')
+import test from 'ava'
+import { includes, length, gte } from 'ramda'
+import randomIndex from '../random-index'
 
 test('It gets a random index from a given array', assert => {
   const array = Array.from(new Array(10)).map((_, i) => i)

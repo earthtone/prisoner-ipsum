@@ -1,6 +1,6 @@
-const { replace } = require('ramda')
-const pick = require('./pick')
-const titles = require('../data/titles.json')
+import { replace } from 'ramda'
+import pick from './pick'
+import titles from '../data/titles.json'
 
 /**
  * @func
@@ -10,4 +10,4 @@ const titles = require('../data/titles.json')
 
 const getRandomTitle = titles => () => replace(/(\\|\[|\])/g, '', pick(titles))
 
-module.exports = getRandomTitle(titles)
+export default getRandomTitle(titles)

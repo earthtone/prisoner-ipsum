@@ -1,4 +1,4 @@
-const randomIndex = require('./random-index')
+import randomIndex from './random-index'
 
 /**
  * Return random index value from an array
@@ -8,4 +8,4 @@ const randomIndex = require('./random-index')
  * */
 
 const pick = array => array[randomIndex(array)]
-module.exports = pick
+export default pick
