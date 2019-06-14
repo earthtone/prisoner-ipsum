@@ -1,4 +1,4 @@
-const getRandomSentence = require('./get-random-sentence')
+import getRandomSentence from './get-random-sentence'
 
 /**
  * @func
@@ -23,4 +23,4 @@ function getParagraph (sentences, maxWordLength) {
   return paragraph
 }
 
-module.exports = getParagraph
+export default getParagraph

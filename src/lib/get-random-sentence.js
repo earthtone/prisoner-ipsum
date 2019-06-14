@@ -1,5 +1,5 @@
-const { compose, replace } = require('ramda')
-const pick = require('./pick')
+import { compose, replace } from 'ramda'
+import pick from './pick'
 
 /**
  * @func
@@ -12,4 +12,4 @@ const getRandomSentence = compose(
   pick
 )
 
-module.exports = getRandomSentence
+export default getRandomSentence

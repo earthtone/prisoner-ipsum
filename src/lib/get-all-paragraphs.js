@@ -1,5 +1,5 @@
-const getParagraph = require('./get-paragraph')
-const sentences = require('../data/quotes.json')
+import getParagraph from './get-paragraph'
+import sentences from '../data/quotes.json'
 
 /**
  * @func
@@ -14,4 +14,4 @@ function getAllParagraphs (minParaLength = 1, maxWordLength = 250) {
   }, '')
 }
 
-module.exports = getAllParagraphs
+export default getAllParagraphs

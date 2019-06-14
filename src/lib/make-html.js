@@ -1,4 +1,4 @@
-const { trim, replace, compose, split, filter, reduce, identity } = require('ramda')
+import { trim, replace, compose, split, filter, reduce, identity } from 'ramda'
 
 /**
  * @func
@@ -13,4 +13,4 @@ const makeHtml = compose(
   trim
 )
 
-module.exports = makeHtml
+export default makeHtml

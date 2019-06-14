@@ -3,23 +3,18 @@
 const argv = require('minimist')(process.argv.slice(2))
 const { prop } = require('ramda')
 
-const getAllParagraphs = require('../')
-const makeHtml = require('../html')
-const getRandomTitle = require('../title')
-const getJson = require('../json')
-
+const { json } = require('./lib')
 const type = prop('o', argv) || prop('output', argv)
 var out
 
 if (type && type === 'title') {
-  out = getRandomTitle()
+  out = json().title
 } else if (type && type === 'html') {
-  console.log(...argv._)
-  out = makeHtml(...argv._)
+  out = json(...argv._).html
 } else if (type && type === 'json') {
-  out = getJson(...argv._)
+  out = json(...argv._)
 } else {
-  out = getAllParagraphs(...argv._)
+  out = json(...argv._).text
 }
 
 console.log(out)
