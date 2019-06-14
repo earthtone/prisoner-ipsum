@@ -4,6 +4,8 @@
 
 Lorem Ipsum generator for quotes from [The Prisoner](https://en.wikipedia.org/wiki/The_Prisoner)
 
+![badge](https://travis-ci.org/earthtone/prisoner-ipsum.svg?branch=master)
+
 ## Installation
 
 ```sh
