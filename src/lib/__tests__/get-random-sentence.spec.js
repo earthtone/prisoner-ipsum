@@ -1,5 +1,5 @@
 import test from 'ava'
-import { includes } from 'ramda'
+import includes from 'ramda/src/includes'
 import sentences from '../../data/quotes.json'
 import getRandomSentence from '../get-random-sentence'
 
