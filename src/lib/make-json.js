@@ -1,11 +1,9 @@
 import getText from './get-all-paragraphs'
 import getTitle from './get-random-title'
-import makeHtml from './make-html'
 
 /**
  * @typedef {Object} Api
  * @property {string} text
- * @property {string} html
  * @property {string} title
  * */
 
@@ -19,7 +17,6 @@ export default (...args) => {
   const text = getText(...args)
   return {
     text,
-    html: makeHtml(text),
     title: getTitle()
   }
 }

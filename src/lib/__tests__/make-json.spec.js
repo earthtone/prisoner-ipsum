@@ -16,14 +16,6 @@ test('returns object with ipsum text', assert => {
   assert.is(actual, expected)
 })
 
-test('returns object with ipsum html', assert => {
-  const { html } = makeJson(5)
-  let actual = html.match(/(<p>)|(<\/p><p>|(<\/p>))/).length
-  let expected = 4
-  assert.is(actual, expected)
-  assert.snapshot.skip(html)
-})
-
 test('returns object with title', assert => {
   const { title } = makeJson(4)
   let actual = typeof title
