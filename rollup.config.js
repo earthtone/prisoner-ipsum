@@ -8,7 +8,6 @@ export default {
   output: [
     { file: 'dist/index.esm.js', format: 'esm', name: 'prisoner-ipsum' },
     { file: 'dist/index.umd.js', format: 'umd', name: 'prisoner-ipsum' },
-    { file: 'dist/index.unpkg.js', format: 'iife', name: 'PrisonerIpsum' },
-    { file: 'bin/lib.js', format: 'cjs' }
+    { file: 'dist/index.unpkg.js', format: 'iife', name: 'PrisonerIpsum' }
   ]
 }

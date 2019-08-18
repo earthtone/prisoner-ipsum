@@ -5,9 +5,6 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
   "unpkg": "dist/index.unpkg.js",
-  "bin": {
-    "prisoner-ipsum": "./bin/cli.js"
-  },
   "scripts": {
     "clean": "rimraf dist && rimraf bin/lib.js",
     "lint": "eslint . --fix",
