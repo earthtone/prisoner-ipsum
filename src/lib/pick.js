@@ -7,5 +7,5 @@ import randomIndex from './random-index'
  * @return {*}
  * */
 
-const pick = array => array[randomIndex(array)]
+const pick = (array, seed = Date.now()) => array[randomIndex(array, seed)]
 export default pick
