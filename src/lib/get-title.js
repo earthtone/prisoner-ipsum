@@ -1,6 +1,7 @@
-import { replace } from 'ramda'
+import replace from 'ramda/src/replace'
+
 import pick from './pick'
-import titles from '../data/titles.json'
+// import titles from '../data/titles.json'
 
 /**
  * @func
@@ -8,5 +9,8 @@ import titles from '../data/titles.json'
  * @return {String} - sentence
  * */
 
-const getRandomTitle = titles => () => replace(/(\\|\[|\])/g, '', pick(titles))
-export default getRandomTitle(titles)
+const getRandomTitle = (seed, titles) =>
+  () =>
+    replace(/(\\|\[|\])/g, '', pick(seed, titles))
+
+export default getRandomTitle

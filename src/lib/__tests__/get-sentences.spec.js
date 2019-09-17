@@ -4,7 +4,7 @@ import fixture from './__fixtures__/data.json'
 
 test('returns an array of specified length from an array source', assert => {
   let ln = 3
-  let result = getSentences('abc', ln, fixture)
+  let result = getSentences('seed', ln, fixture)
 
   assert.truthy(Array.isArray(result))
   assert.is(result.length, ln)
