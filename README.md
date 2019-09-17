@@ -6,7 +6,7 @@ Lorem Ipsum generator for quotes from [The Prisoner](https://en.wikipedia.org/wi
 
 ![badge](https://travis-ci.org/earthtone/prisoner-ipsum.svg?branch=master)
 
-Version 1.0.0 sees a dramatic reduction in this package's scope. CLI functionality is no longer supported, and the `ipsum` generator outputs "paragraphs" of text as an `Array` of `String`s. This approach was taken to reduce the output package size, and to reduce the complexity of maintaining three different content types (i.e. HTML, raw text, and JSON). Packaging output data inside a JSON object, or outputing it to the console is trivial enough. The consumer now has full flexibility, and responsiblity, for rendering `ipsum` output in whatever way befits the use.
+Version 2.0.0 sees a dramatic reduction in this package's scope. CLI functionality is no longer supported, and the `ipsum` generator outputs "paragraphs" of text as an `Array` of `String`s. This approach was taken to reduce the output package size, and to reduce the complexity of maintaining three different content types (i.e. HTML, raw text, and JSON). Packaging output data inside a JSON object, or outputing it to the console is trivial enough. The consumer now has full flexibility, and responsiblity, for rendering `ipsum` output in whatever way befits the use.
 
 Output of a `title` string is still supported, and functions as previously.
 
