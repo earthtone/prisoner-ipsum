@@ -9,5 +9,4 @@ import titles from '../data/titles.json'
  * */
 
 const getRandomTitle = titles => () => replace(/(\\|\[|\])/g, '', pick(titles))
-
 export default getRandomTitle(titles)

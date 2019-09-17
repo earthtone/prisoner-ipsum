@@ -1,9 +1,9 @@
 import test from 'ava'
 import { includes } from 'ramda'
 import titles from '../../data/titles.json'
-import getRandomTitle from '../get-random-title'
+import getTitle from '../get-title'
 
 test('It returns a random episode title', assert => {
-  let actual = includes(getRandomTitle(), titles)
+  let actual = includes(getTitle(), titles)
   assert.truthy(actual)
 })
