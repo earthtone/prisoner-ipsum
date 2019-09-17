@@ -5,9 +5,9 @@ import randomIndex from '../random-index'
 test('It gets a random index from a given array', assert => {
   const array = Array.from(new Array(10)).map((_, i) => i)
 
-  let actual = gte(length(array), randomIndex(array, 'foo'))
+  let actual = gte(length(array), randomIndex('seed', array))
   assert.truthy(actual)
 
-  actual = includes(randomIndex(array, 'foo'), array)
+  actual = includes(randomIndex('seed', array), array)
   assert.truthy(actual)
 })

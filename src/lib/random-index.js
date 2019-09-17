@@ -1,4 +1,5 @@
 import random from 'seed-random'
+import curry from 'ramda/src/curry'
 
 /**
  * @func
@@ -6,6 +7,8 @@ import random from 'seed-random'
  * @return {Number}
  * */
 
-const randomIndex = (array, seed) => Math.floor(random(seed)() * array.length)
+const randomIndex = curry((seed, array) =>
+  Math.floor(random(seed)() * array.length)
+)
 
 export default randomIndex

@@ -6,7 +6,7 @@ test('returns an array of arrays of specified length from an array source', asse
   let paragraphsLn = 3
   let sentencesLn = 5
 
-  let result = getParagraphs('abc', { paragraphsLn, sentencesLn }, fixture)
+  let result = getParagraphs('seed', { paragraphsLn, sentencesLn }, fixture)
 
   assert.truthy(Array.isArray(result))
   assert.is(result.length, paragraphsLn)

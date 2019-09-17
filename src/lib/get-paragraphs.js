@@ -4,7 +4,7 @@ import { getSentences } from './get-sentences'
 const getParagraphs = curry((seed, { paragraphsLn, sentencesLn }, sentences) =>
   Array.from({ length: paragraphsLn })
     .map((_, i) =>
-      getSentences(seed * i, sentencesLn, sentences).join(' ')
+      getSentences(seed * (i + 1), sentencesLn, sentences).join(' ')
     )
 )
 

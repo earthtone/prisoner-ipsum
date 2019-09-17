@@ -1,4 +1,5 @@
 import randomIndex from './random-index'
+import curry from 'ramda/src/curry'
 
 /**
  * Return random index value from an array
@@ -7,5 +8,8 @@ import randomIndex from './random-index'
  * @return {*}
  * */
 
-const pick = (array, seed = Date.now()) => array[randomIndex(array, seed)]
+const pick = curry((seed, array) =>
+  array[randomIndex(seed, array)]
+)
+
 export default pick
