@@ -1,6 +1,6 @@
 {
   "name": "@earthtone/prisoner-ipsum",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Lorem Ipsum Generator with Prisoner Quotes",
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
