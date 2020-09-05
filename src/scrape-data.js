@@ -9,11 +9,11 @@ async function scrape () {
   await page.goto('https://en.wikiquote.org/wiki/The_Prisoner')
   await page.waitFor(1000)
   const result = await page.evaluate(function () {
-    return Array.from(document.querySelectorAll('dd')).map(node => node.textContent.replace(/"/g, '').replace(/^(\w|\s)*:\s/ig, ''))
+    return Array.from(document.querySelectorAll('dd')).map(node => node.textContent.replace(/("|[|])/g, '').replace(/^(\w|\s)*:\s/ig, ''))
   })
 
   browser.close()
-  fs.writeFile(path.resolve('data', 'quotes.json'), JSON.stringify(result), err => {
+  fs.writeFile(path.resolve('src', 'data', 'quotes.json'), JSON.stringify(result), err => {
     if (err) throw err
     console.log('🔥')
   })
