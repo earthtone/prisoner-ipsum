@@ -10,7 +10,6 @@ import pick from './pick'
  * */
 
 const getRandomTitle = (seed, titles) =>
-  () =>
-    replace(/(\\|\[|\])/g, '', pick(seed, titles))
+  replace(/(\\|\[|\])/g, '', pick(seed, titles))
 
 export default getRandomTitle

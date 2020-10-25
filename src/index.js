@@ -11,7 +11,7 @@ export const ipsum = (paragraphsLn = 1, sentencesLn = 5) =>
     sentences // source data
   )
 
-export const title = getTitle(
-  Date.now(),
+export const title = (seed = 0) => getTitle(
+  Date.now() + seed,
   titles
 )
